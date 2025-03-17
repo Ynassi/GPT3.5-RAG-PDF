@@ -105,6 +105,7 @@ def cleanup_audio():
     except Exception as e:
         return jsonify({"error": f"Erreur nettoyage audio : {str(e)}"}), 500
     
-if __name__ == "__main__":
-    app.run(host="0.0.0.0", port=10000)  # Mets le bon port (ex: 10000 ou 8080)
+PORT = int(os.environ.get("PORT", 8080)) 
 
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=PORT)
