@@ -1,0 +1,34 @@
+# Exclure l'environnement virtuel
+venv/
+
+# Exclure les fichiers de configuration sensibles
+.env
+
+# Exclure les fichiers générés par Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Exclure les fichiers d'uploads (PDF)
+uploads/
+
+# Exclure les fichiers audio générés
+static/audio/
+
+# Exclure les fichiers de logs et de debug
+*.log
+debug.log
+
+# Exclure les fichiers temporaires du système
+.DS_Store
+Thumbs.db
+
+# Exclure les fichiers générés par Jupyter Notebook (si utilisé)
+.ipynb_checkpoints/
+
+# Exclure les fichiers générés par l'IDE (VS Code, PyCharm, etc.)
+.vscode/
+.idea/
+*.swp
+*.swo

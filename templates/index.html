@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OpenAI GPT3.5 Powered PDF Analyzer.</title>
+  <!-- Lien vers le fichier CSS -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <header>
+    <h1>Application de Recherche PDF par GPT3.5 turbo</h1>
+  </header>
+
+  <section id="upload-section">
+    <!-- Formulaire pour télécharger un fichier PDF -->
+    <form id="uploadForm" enctype="multipart/form-data">
+      <input type="file" id="file" name="file" accept=".pdf" required>
+      <button type="submit">Télécharger le PDF</button>
+    </form>
+    <p id="uploadMessage"></p>
+  </section>
+
+  <!-- Zone de conversation, cachée tant que le PDF n'est pas uploadé -->
+  <section id="chat-section" style="display: none;">
+    <div id="conversation-history"></div>
+    
+    <!-- Barre de saisie de message en bas -->
+    <div id="message-bar">
+      <input type="text" id="messageInput" placeholder="Tapez votre message...">
+      <button id="sendButton">
+        <img src="{{ url_for('static', filename='img/6492707.png') }}" alt="Envoyer">
+      </button>
+    </div>
+  </section>
+
+  <!-- Lien vers le fichier JavaScript -->
+  <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
