@@ -10,11 +10,6 @@ __pycache__/
 *.pyo
 *.pyd
 
-# Exclure les fichiers d'uploads (PDF)
-uploads/
-
-# Exclure les fichiers audio générés
-static/audio/
 
 # Exclure les fichiers de logs et de debug
 *.log
